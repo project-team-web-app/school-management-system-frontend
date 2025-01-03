@@ -1,0 +1,102 @@
+:where(.root-magazine-modal).ant-modal-root .ant-modal-wrap {
+    overflow: hidden;
+}
+
+:where(.magazine-modal).ant-modal .ant-modal-content {
+    box-shadow: none;
+}
+
+:where(.magazine-modal).ant-modal .ant-modal-content {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+:where(.magazine-modal).ant-modal .ant-modal-body {
+    /* overflow: hidden !important; */
+    background-color: transparent;
+}
+
+:where(.esi-magazine) .react-pdf__Page canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+:where(.esi-magazine) .react-pdf__Page div {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+:where(.esi-magazine) .page-content,
+:where(.esi-magazine) .react-pdf__Page {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.book-layout {
+    max-inline-size: 1070px;
+    inline-size: 100%;
+    height: auto !important;
+}
+
+.modal-close-button {
+    color: var(--primary-button-color);
+    background-color: var(--primary-button-text-color);
+    border: none;
+    font-size: 20px;
+}
+
+.modal-close-button:hover {
+    background-color: var(--primary-button-color) !important;
+    color: var(--primary-button-text-color) !important;
+}
+
+:where(.magazine-modal).ant-modal {
+    translate: 0%;
+    transition: all 1s;
+}
+
+:where(.root-magazine-modal).ant-modal-root .ant-modal-wrap {
+    height: 100vh !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:where(.magazine-modal).ant-modal {
+    top: 0 !important;
+}
+
+:where(.magazine-modal).ant-modal.active {
+    translate: -25%;
+}
+
+.magazine-closeable-div {
+    position: absolute;
+    inset-inline: 0;
+    inset-block: 0;
+    inline-size: 50%;
+    block-size: 100%;
+}
+
+@media screen and (min-width: 640px) {
+    .book-layout {
+        max-inline-size: 1070px;
+        inline-size: 100%;
+    }
+
+    :where(.esi-magazine) .page {
+        top: 0 !important;
+        width: 50% !important;
+        height: 100% !important;
+    }
+
+    :where(.esi-magazine) .stf__outerShadow {
+        top: 0 !important;
+        height: 100% !important;
+    }
+
+    :where(.esi-magazine) .--left {
+        left: 0 !important;
+    }
+}

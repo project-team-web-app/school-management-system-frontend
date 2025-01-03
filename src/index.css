@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'KhmerOS';
+  src: url('./assets/fonts/KhmerOS_battambang.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/open-sans.regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/open-sans.regular.ttf') format('truetype');
+}
+
+* {
+  font-family: 'KhmerOS', sans-serif;
+}
+
+.khmer {
+  font-family: 'KhmerOS', sans-serif;
+}
+
+.chinese {
+  font-family: 'OpenSans', sans-serif;
+}
+.english {
+  font-family: 'OpenSans', sans-serif;
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f3f3f3;
+  --primary-text-color: #222222;
+  --secondary-text-color: #e50a47;
+  --white-text-color: #ffffff;
+  --primary-button-text-color: #ffffff;
+  --primary-button-color: #222222;
+  --secondary-button-color: #fdecf1;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "OpenSans";
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
